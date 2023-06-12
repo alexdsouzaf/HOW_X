@@ -1,0 +1,40 @@
+<!-- <button class="btn btn-primary">
+        <a routerLink="/grafico" >grafico generico</a>
+    </button> -->
+
+<body>
+    <nav class="navbar">
+
+        <h1 class="titulo-pagina">Bem-Vindo</h1>
+
+        <ul class="nav-links">
+            <div class="menu">
+                <li>Home</li>
+                <li>Sobre</li>
+            </div>
+        </ul>
+    </nav>
+
+
+    <!--da pra tentar estilizar essa div pra ser um side menu ou um card no meio da tela-->
+    <div style="display: flex;justify-content: center; width: 100%;text-align: center;">
+
+        <div class="card">
+            <h3>Indicadores</h3>
+
+            <div class="opcoes">
+                <button><a routerLink="/grafico-vendas">Vendas do mês</a></button>
+            </div>
+
+            <div class="opcoes">
+                <button><a routerLink="/grafico-origem-vendas">Origem das Vendas</a></button>
+            </div>
+            <!--ia ter uma terceira opcao, quem sabe na segunda etapa eu faça-->
+            <!-- <div class="opcoes">
+                <button><a routerLink="/grafico">aqui tem uma opcao 3</a></button>
+            </div> -->
+        </div>
+    </div>
+
+
+</body>
