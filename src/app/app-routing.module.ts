@@ -1,17 +1,18 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AppComponent } from './app.component';
 import { GraficoOrigemVendasComponent } from './grafico-origem-vendas/grafico-origem-vendas.component';
 import { GraficoVendasComponent } from './grafico-vendas/grafico-vendas.component';
-import { TelaInicialComponent } from './tela-inicial/tela-inicial.component';
+import { TelaLoginComponent } from './tela-login/tela-login.component';
+import { TelaSobreComponent } from './tela-sobre/tela-sobre.component';
+import { TelaContatoComponent } from './tela-contato/tela-contato.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/inicio', pathMatch: 'full' },
-  // { path: '', component: AppComponent },
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: 'login', component: TelaLoginComponent },
   { path: 'grafico-vendas', component: GraficoVendasComponent },
-  { path: 'inicio', component: TelaInicialComponent },
-  { path: 'grafico-origem-vendas', component: GraficoOrigemVendasComponent }
-
+  { path: 'grafico-origem-vendas', component: GraficoOrigemVendasComponent },
+  { path: 'sobre', component: TelaSobreComponent },
+  { path: 'contato', component: TelaContatoComponent }
 ];
 
 @NgModule({

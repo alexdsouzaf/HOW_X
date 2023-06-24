@@ -4,15 +4,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GraficoVendasComponent } from './grafico-vendas/grafico-vendas.component';
-import { TelaInicialComponent } from './tela-inicial/tela-inicial.component';
 import { GraficoOrigemVendasComponent } from './grafico-origem-vendas/grafico-origem-vendas.component';
+import { TelaLoginComponent } from './tela-login/tela-login.component';
+import { TelaSobreComponent } from './tela-sobre/tela-sobre.component';
+import { TelaContatoComponent } from './tela-contato/tela-contato.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GraficoVendasComponent,
-    TelaInicialComponent,
-    GraficoOrigemVendasComponent
+    GraficoOrigemVendasComponent,
+    TelaLoginComponent,
+    TelaSobreComponent,
+    TelaContatoComponent
   ],
   imports: [
     BrowserModule,
