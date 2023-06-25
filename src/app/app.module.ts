@@ -7,7 +7,6 @@ import { GraficoVendasComponent } from './grafico-vendas/grafico-vendas.componen
 import { GraficoOrigemVendasComponent } from './grafico-origem-vendas/grafico-origem-vendas.component';
 import { TelaLoginComponent } from './tela-login/tela-login.component';
 import { TelaSobreComponent } from './tela-sobre/tela-sobre.component';
-import { TelaContatoComponent } from './tela-contato/tela-contato.component';
 
 @NgModule({
   declarations: [
@@ -15,8 +14,7 @@ import { TelaContatoComponent } from './tela-contato/tela-contato.component';
     GraficoVendasComponent,
     GraficoOrigemVendasComponent,
     TelaLoginComponent,
-    TelaSobreComponent,
-    TelaContatoComponent
+    TelaSobreComponent
   ],
   imports: [
     BrowserModule,
