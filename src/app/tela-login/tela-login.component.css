@@ -1,0 +1,92 @@
+#login{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 10em;
+    border: 2px solid #254e83;
+    background-color: #88bcff; 
+    margin: 0;
+    z-index: 999;
+}
+
+.login-in{
+    animation-name: movimento-login;
+    animation-duration: .5s;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+}
+
+.login-out{
+    animation-name: movimento-login;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+}
+
+#content{
+    display: flex;
+}
+
+#div-botao{
+    display: flex;
+    align-items: center;
+}
+
+#div-campos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#div-campos input{
+    all: unset;
+    background-color: aliceblue;
+    height: 20%;
+    border-bottom-color: #254e83;
+    border-left-color: aliceblue;
+    border-right-color: aliceblue;
+    border-style: solid;
+    border-width: 0 0.4em 0.1em 0.4em;
+    margin: 0.4em;
+    font-size: 1.2em;
+    color: #254e83;
+}
+
+#botao-entrar{
+    margin-top: 1.65em;
+    margin-left: 1em;
+    background-color: aliceblue;
+    padding: 0.21em 0.8em;
+    border-color: #33629e;
+    color: #254e83;
+    font-size: 1.1em;
+    border-width: 0.1em;
+    box-shadow: #254e83 0.1em 0.1em 0.2em;
+    cursor: pointer;
+}
+
+#botao-entrar:hover{
+    background-color: #33629e;
+    border-color: aliceblue;
+    color: aliceblue;
+    box-shadow: aliceblue 0.05em 0.05em 0.1em;
+    transition: .3s;
+}
+
+#link-recuperar-senha{
+    text-decoration: none;
+    color: #33629e;
+    margin-left: 1em;
+    cursor: pointer;
+}
+
+#link-recuperar-senha:hover{
+    color: aliceblue;
+}
+
+@keyframes movimento-login{
+    0% {transform: translateY(-119%);}
+    25% {transform: translateY(-150%)}
+    50% {transform: translateY(-180%)}
+    75% {transform: translateY(-210%)}
+    100% {transform: translateY(-240%)}
+}

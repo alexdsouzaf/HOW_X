@@ -2,7 +2,6 @@
     position: relative;
     top: 50%;
     transform: translateY(70%); 
-    margin: 1.5em;
 }
 
 #titulo{
@@ -19,11 +18,12 @@ a {
     all: unset;
 }
 
-.navbar {
+#navbar {
     display: flex;
+    visibility: hidden;
     align-items: center;
     justify-content: space-between;
-    border: 2px solid #254e83; ;
+    border: 2px solid #254e83;
     background-color: #88bcff; 
 }
 
@@ -78,4 +78,8 @@ ul.dropdown{
 .nav-links li:hover ul.dropdown{
     display: block;
     transition: 0.5s;
+}
+
+#login{
+    background-color: red;
 }
