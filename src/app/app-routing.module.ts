@@ -4,15 +4,13 @@ import { GraficoOrigemVendasComponent } from './grafico-origem-vendas/grafico-or
 import { GraficoVendasComponent } from './grafico-vendas/grafico-vendas.component';
 import { TelaLoginComponent } from './tela-login/tela-login.component';
 import { TelaSobreComponent } from './tela-sobre/tela-sobre.component';
-import { TelaContatoComponent } from './tela-contato/tela-contato.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'login', component: TelaLoginComponent },
   { path: 'grafico-vendas', component: GraficoVendasComponent },
   { path: 'grafico-origem-vendas', component: GraficoOrigemVendasComponent },
-  { path: 'sobre', component: TelaSobreComponent },
-  { path: 'contato', component: TelaContatoComponent }
+  { path: 'sobre', component: TelaSobreComponent }
 ];
 
 @NgModule({
